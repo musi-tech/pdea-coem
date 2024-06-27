@@ -59,7 +59,8 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="footer-copyline">
-            <p>© 2022 PDEA College Of Engineering. All Rights Reserved.</p>
+            <p>© 2024 PDEA College Of Engineering. All Rights Reserved.</p>
+            <p>Developed By: <a href="/">MusiTech</a></p>
             </div>
         </>
     );

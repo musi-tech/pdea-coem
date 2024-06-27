@@ -3,14 +3,14 @@ import React from 'react';
 const messages = [
   {
     id: 1, // Unique identifier for each message
-    name: "Dr. John Smith",
+    name: "Shri. Ajit Pawar",
     image: require("../../assets/images/Presedent.jpg"), // Replace with your principal's image path
     position: "President",
     message: "Our vision is based on hard work, open communication, a strong emphasis on teamwork and a high level of responsibility. This visionary culture allows and emphasizes our wards not only to adopt the present...",
   },
   {
     id: 2, // Unique identifier for each message
-    name: "Ms. Jane Doe",
+    name: "Dr. R. V. Patil",
     image: require("../../assets/images/Principal.jpg"), // Replace with your president's image path
     position: "Principal",
     message: "It is my immense pleasure to welcome you to the creative world of Engineering. PDEA's College of Engineering, Manjari (Bk) at Pune, is a prominent engineering education center, located in the heart ...",

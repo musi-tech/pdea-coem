@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for responsiveness */
     gap: 10px;
-    background-color: black;
+    background-color: var(--text-color);
     color: white;
     padding: 20px;
 }
@@ -64,8 +64,8 @@
 
 .footer-copyline {
     text-align: center;
-    color: white;
-    background-color: black;
+    color: var(--text-color);
+    background-color: white;
     border-top: 1px solid white;
     padding: 10px 0; /* Added padding for better spacing */
 }

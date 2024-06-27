@@ -13,6 +13,7 @@ import Footer from "../Components/Footer/Footer";
 import Accreditations from "../Components/Accreditations/Accreditations";
 import RecruitersCarousal from "../Components/RecruitersCarousal/RecruitersCarousal";
 import Button from "../Components/Button/Button";
+import ApplyButton from "../Components/ApplyButton";
 
 
 
@@ -27,7 +28,9 @@ const Home = () => {
       <News />
       <Accreditations />
       <RecruitersCarousal />
-      <Button label={"Apply Now"}/>
+      <div className="flex justify-center my-10">
+      <ApplyButton />
+      </div>
       <Footer/>
     </Box>
   );

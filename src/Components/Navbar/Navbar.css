@@ -10,11 +10,11 @@
   padding: 20px;
   transition: background-color 0.3s ease;
   z-index: 1000;
-  background-color: transparent; /* Initially transparent */
+  background-color: var(--text-color); /* Initially transparent */
 }
 
 .navbar.scrolled {
-  background-color: var(--background-color);
+  background-color: var(--text-color);
   color: var(--text-color);
 }
 
@@ -32,10 +32,12 @@
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   margin: 4px 0;
   transition: 0.4s;
 }
+
+
 
 .hamburger .bar.open:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -62,7 +64,7 @@
   text-decoration: none;
 }
 .nav-links a {
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
 }
 
@@ -128,7 +130,7 @@
     height: calc(100vh - 60px);
     width: 100%;
     flex-direction: column;
-    background-color: var(--background-color);
+    background-color: var(--text-color);
     transform: translateX(-100%);
   }
 

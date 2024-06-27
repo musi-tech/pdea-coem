@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AcdemicContent from '../../Components/AcdemicContent';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-import Sidebar from '../../Components/Sidebar/Sidebar';
+import Sidebar from '../../Components/Sidebar/AcademicSidebar';
 import AcademicsHome from '../../Components/AcademicsHome';
 import Syllabus from '../../Components/Syllabus';
 import AcademicCalendars from '../../Components/AcademicCalender';
@@ -49,8 +49,8 @@ function Academics() {
       <div className="hidden md:flex">
         <Navbar />
         <div className="content-container pt-20 flex flex-row w-full min-h-screen">
-          <Sidebar onSectionChange={handleSectionChange} />
-          <div className="flex-grow m-10 px-10 "> {/* Apply flex-grow for full width */}
+          <Sidebar className="w-1/3" onSectionChange={handleSectionChange} />
+          <div className="w-2/3 m-10 px-10 "> {/* Apply flex-grow for full width */}
             <AcdemicContent activeSection={activeSection} />
           </div>
         </div>

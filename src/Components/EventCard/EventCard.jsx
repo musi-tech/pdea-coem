@@ -1,7 +1,7 @@
 import React from "react";
 import "./eventcard.css";
 
-function EventCard({ date, title, description }) {
+function EventCard({ date, title, description,link }) {
   const truncatedDescription = description.length > 100 
     ? description.substring(0, 255) + "..." 
     : description;
@@ -32,7 +32,7 @@ function EventCard({ date, title, description }) {
             </p>
             </div>
 
-            <a className="event-action" href="/">
+            <a className="event-action" href={link}>
                 Register Now
             </a>
         </div>
