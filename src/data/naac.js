@@ -118,3 +118,26 @@ export const iqacCommitteeData = [
         "name": "AQAR 2017-18" 
     }
 ];
+
+export const mandareport =[
+    { 
+        "srNo": "1", 
+        "title": "AQAR 2022-23- CR3",
+        "year": "2022-23",
+        "url": "/" 
+    },
+    { 
+        "srNo": "1", 
+        "title": "AQAR 2022-23- CR3",
+        "year": "2022-23",
+        "url": "/" 
+    },
+];
+
+export const naacssr =[
+    { 
+        "srNo": "1", 
+        "criteria": "AQAR 2022-23- CR3",
+        "url": "/" 
+    },
+];

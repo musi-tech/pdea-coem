@@ -39,7 +39,7 @@ const Notifications = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-white min-h-screen py-24">
+      <div className="bg-white min-h-screen my-32">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold text-blue-400 text-center mb-6">Official Notifications</h1>
           <Filter filter={filter} setFilter={setFilter} />

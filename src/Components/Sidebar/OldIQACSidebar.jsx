@@ -2,9 +2,11 @@ import React from 'react';
 
 const Sidebar = ({ activeSection, onSectionChange }) => {
   const sections = [
-    '2020-2021',
-    '2021-22',
-    '2022-23',
+    'IQAC COMMITTEE',
+    'AQAR Reports',
+    'IQAC Minutes & Action Taken Reports', // Escape the single quote in the title
+    
+    
   ];
 
   return (

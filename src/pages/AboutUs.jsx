@@ -24,7 +24,7 @@ function AboutUs() {
     switch (activeSection) {
       default:
         return (
-          <div className='my-20 flex flex-col gap-5 px-5'>
+          <div className='my-32 flex flex-col gap-5 px-5'>
             <VisionAbout />
             <About />
             <PresidentMsgAbout />

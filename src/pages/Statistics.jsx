@@ -8,7 +8,7 @@ function Statistics() {
     <div>
         <Navbar />
         <div className='min-h-screen'>
-            <div className="pt-20">
+            <div className="my-32">
             <StatCharts />
             </div>
         </div>

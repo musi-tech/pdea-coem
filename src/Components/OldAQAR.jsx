@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { naacssr } from '../data/naac';
+import { aqarreports } from '../data/oldnaac';
 
-const NAACSSRDocument = () => {
+const OldAQAR = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,11 +15,11 @@ const NAACSSRDocument = () => {
         <thead>
           <tr className="bg-gray-200 text-left">
             <th className="py-2 px-4">Sr.No.</th>
-            <th className="py-2 px-4">Criteria</th>
+            <th className="py-2 px-4">Information(Click on link to download)</th>
           </tr>
         </thead>
         <tbody>
-          {naacssr.map((document, index) => (
+          {aqarreports.map((document, index) => (
             <tr key={index} className="border-b border-gray-200 hover:bg-gray-100">
               <td className="py-2 px-4">{document.srNo}</td>
               <td className="py-2 px-4">
@@ -35,5 +35,4 @@ const NAACSSRDocument = () => {
   );
 };
 
-
-export default NAACSSRDocument
+export default OldAQAR
