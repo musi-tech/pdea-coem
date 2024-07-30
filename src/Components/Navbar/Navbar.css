@@ -80,51 +80,30 @@
 }
 
 /* Responsive styles */
+
 @media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    height: calc(100vh - 60px);
-    width: 100%;
+  /* Mobile-specific styles */
+  .navbar {
+    /* Adjust flexbox properties for mobile */
     flex-direction: column;
-    background-color: var(--background-color);
-    transform: translateX(-100%);
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    /* Adjust position and display for mobile menu */
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+    position: absolute;    
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
   }
 
   .nav-links.open {
     transform: translateX(0);
   }
 
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links a {
-    padding: 20px;
-    width: 100%;
-    display: block;
-    color: var(--background-color);
-  }
-
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .logo {
-    margin: 0 auto;
-  }
-
-  .apply-btn {
-    order: 1;
-  }
-}
-
-@media (min-width: 769px) {
-  .nav-links {
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
+  /* Other mobile-specific styles */
 }

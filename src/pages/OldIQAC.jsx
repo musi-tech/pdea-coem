@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
-import Sidebar from '../Components/Sidebar/IQACSidebar';
-import AboutUsContent from '../Components/IQACContent'; 
+import Sidebar from '../Components/Sidebar/OldIQACSidebar';
+import AboutUsContent from '../Components/OldIQACContent'; 
 
-import IQACCommitte from '../Components/IQACCommitte'
+import OldIQACCommitte from '../Components/OldIQACCommitte'
+import OldAQAR from '../Components/OldAQAR';
+import OldIQACmatReports from '../Components/OldIQACmatReports';
 
 import Footer from '../Components/Footer/Footer';
-import AQAR from '../Components/AQAR';
-import IQACmatReports from '../Components/IQACmatReports';
-import NAACSSRDocument from '../Components/NAACSSRDocument';
-import IQACNotices from '../Components/IQACNotices';
-import OtherDocument from '../Components/OtherDocument';
 
-function IQAC() {
+function OldIQAC() {
   const [activeSection, setActiveSection] = useState('Vision & Mission');
 
   const handleSectionChange = (section) => {
@@ -24,10 +21,9 @@ function IQAC() {
       default:
         return (
           <div className='my-32 flex flex-col gap-5 px-5'>
-            <IQACCommitte />
-            <AQAR />
-            <IQACmatReports />
-            <NAACSSRDocument />
+            <OldIQACCommitte />
+            <OldAQAR />
+            <OldIQACmatReports />
           </div>
         );
     }}
@@ -60,4 +56,4 @@ function IQAC() {
   );
 }
 
-export default IQAC;
+export default OldIQAC;

@@ -24,6 +24,7 @@ import Scholarship from './pages/Scholarship';
 import Statistics from './pages/Statistics';
 
 import IQAC from './pages/IQAC';
+import OldIQAC from './pages/OldIQAC';
 
 import Alumni from './pages/Alumni';
 
@@ -32,6 +33,7 @@ import AdminPanel from './pages/AdminPanel';
 import ProtectedRoute from './Components/ProtectedRoute';
 
 import GeneralFacultyPage from './pages/GeneralFacultyPage';
+import OngoingResearch from './pages/OngoingResearch';
 
 
 function App() {
@@ -58,6 +60,7 @@ function App() {
         <Route path="/placements" element={<Placements />} />
         <Route path="/scholarship" element={<Scholarship />} />
         <Route path="/iqac" element={<IQAC />} />
+        <Route path="/oldiqac" element={<OldIQAC />} />
         <Route path="/alumni" element={<Alumni />} />
 
         <Route path="/notifications" element={<Notifications />} />
@@ -65,6 +68,8 @@ function App() {
         <Route path="/admin/*" element={<ProtectedRoute element={<AdminPanel />} />} />
 
         <Route path="/faculty" element={<GeneralFacultyPage />} /> 
+
+        <Route path="/ongoingprojects" element={<OngoingResearch />} /> 
       </Routes>
     </BrowserRouter>
   );

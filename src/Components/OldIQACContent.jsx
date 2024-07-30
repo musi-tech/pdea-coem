@@ -1,11 +1,8 @@
 import React from 'react';
 
-import IQACCommitte from './IQACCommitte';
-import AQAR from './AQAR';
-import IQACmatReports from './IQACmatReports';
-import NAACSSRDocument from './NAACSSRDocument';
-import IQACNotices from './IQACNotices';
-import OtherDocument from './OtherDocument';
+import OldIQACCommitte from './OldIQACCommitte';
+import OldAQAR from './OldAQAR';
+import OldIQACmatReports from './OldIQACmatReports';
 
 
 import { motion } from 'framer-motion';
@@ -16,26 +13,21 @@ const AboutUsContent = ({ activeSection }) => {
         case 'IQAC COMMITTEE':
             // Replace with content for Vision & Mission section
             return (
-                <IQACCommitte />
+                <OldIQACCommitte />
             );
         case 'AQAR Reports':
             // Replace with content for Vision & Mission section
             return (
-                <AQAR />
+                <OldAQAR />
             );
         case 'IQAC Minutes & Action Taken Reports':
             // Replace with content for Vision & Mission section
             return (
-                <IQACmatReports />
-            );
-        case 'NAAC SSR Document':
-            // Replace with content for Vision & Mission section
-            return (
-                <NAACSSRDocument />
+                <OldIQACmatReports />
             );
       // Add more case statements for other sections as needed
       default:
-        return <IQACCommitte />;
+        return <OldIQACCommitte />;
     }
   };
 

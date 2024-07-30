@@ -19,7 +19,7 @@ function Gallery() {
     switch (activeSection) {
       default:
         return (
-          <div className='my-20 flex flex-col gap-5 px-5'>
+          <div className='my-32 flex flex-col gap-5 px-5'>
             <Gallery2021 />
             <Gallery2122 />
             <Gallery2223 />

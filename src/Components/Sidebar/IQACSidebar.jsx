@@ -6,13 +6,12 @@ const Sidebar = ({ activeSection, onSectionChange }) => {
     'AQAR Reports',
     'IQAC Minutes & Action Taken Reports', // Escape the single quote in the title
     'NAAC SSR Document', // Escape the single quote in the title
-    'IQAC Notices', // Add more sections as needed
-    'Other Document',
+    
   ];
 
   return (
     <div
-      className={`sidebar flex flex-col gap-3 p-4 rounded-lg shadow-md font-light text-md cursor-pointer bg-white w-1/5`}
+      className={`sidebar flex flex-col gap-3 p-10 rounded-lg shadow-md font-light text-md cursor-pointer bg-white w-1/5`}
     >
       {sections.map((section) => (
         <button

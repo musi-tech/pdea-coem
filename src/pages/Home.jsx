@@ -22,7 +22,7 @@ const Home = () => {
     <Box className="parent">
       <Navbar />
       <HeroVid />
-      <div id="nextSection">
+      <div id="nextSection" className="my-32">
       <MsgCard  />
       </div>
       

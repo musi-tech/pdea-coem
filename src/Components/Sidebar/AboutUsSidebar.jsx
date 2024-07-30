@@ -13,7 +13,7 @@ const AboutUsSidebar = ({ activeSection, onSectionChange }) => {
 
   return (
     <div
-      className={`sidebar flex flex-col gap-3 p-4 rounded-lg shadow-md font-light text-md cursor-pointer bg-white w-1/5`}
+      className={`sidebar flex flex-col gap-3 p-10 rounded-lg shadow-md font-light text-md cursor-pointer bg-white w-1/5`}
     >
       {sections.map((section) => (
         <button

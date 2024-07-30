@@ -25,7 +25,7 @@ const GeneralFacultyPage = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-blue-500 text-white mt-20 py-20 px-4 md:px-8 lg:px-16">
+      <div className="bg-blue-500 text-white my-32 py-20 px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}

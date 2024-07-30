@@ -24,7 +24,7 @@ function Placements() {
     switch (activeSection) {
       default:
         return (
-          <div className='my-20 flex flex-col gap-5 px-5'>
+          <div className='my-32 flex flex-col gap-5 px-5'>
             <TandPHome />
             <TrainingProgramme />
             <PlacedStudents />
@@ -49,7 +49,7 @@ function Placements() {
       {/* Desktop Layout - Full width for placement content */}
       <div className="hidden md:flex">
         <Navbar />
-        <div className="content-container pt-20 flex flex-row w-full min-h-screen">
+        <div className="content-container my-32 flex flex-row w-full min-h-screen">
           <Sidebar className="w-1/3" onSectionChange={handleSectionChange} />
           <div className="w-2/3 m-10 px-10 "> {/* Apply flex-grow for full width */}
             <PlacementContent activeSection={activeSection} />
